@@ -44,5 +44,9 @@
 
             // find all the outer divs, add a col-12 and print it out
             foreach($html->find('div[class=vacancy]') as $element){
-              echo "<div class='col-md-12'>" . $element . "</div>" ; 
+              "<div class='col-md-12'>" . $element . "</div>" ;
             }
+
+            $output = $html->find('div[class=vacancy]');
+            $file = "yolo.html";
+            file_put_contents($file, $output);
