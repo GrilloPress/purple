@@ -44,7 +44,7 @@
 
             // find all the outer divs, add a col-12 and print it out
             foreach($html->find('div[class=vacancy]') as $element){
-              "<div class='col-md-12'>" . $element . "</div>" ;
+              $element->outertext = "<div class='col-md-12'>" . $element . "</div>" ;
             }
 
             $output = $html->find('div[class=vacancy]');
