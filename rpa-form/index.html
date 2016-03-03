@@ -1,0 +1,40 @@
+<form id="service-request-form" action="message.php" method="post">
+      <div class="form-group">
+        <label for="customerName">Full name <span class="required">(required)</span></label>
+        <input type="text" class="form-control" id="customerName" name="customerName" placeholder="Full Name" required>
+      </div>
+      <div class="form-group">
+        <label for="jobTitle">Job Title <span class="required">(required)</span></label>
+      <input type="text" class="form-control" id="jobTitle" name="jobTitle" placeholder="Job Title" required>
+      </div>
+      <div class="form-group">
+        <label for="customerCompany">Organisation <span class="required">(required)</span></label>
+      <input type="text" class="form-control" id="customerCompany" name="customerCompany" placeholder="Organization" required>
+      </div>
+      <div class="form-group">
+        <label for="phoneNumber">Phone Number <span class="required">(required)</span></label>
+      <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" required>
+      </div>
+      <div class="form-group">
+        <label for="customerEmail">Email address <span class="required">(required)</span></label>
+        <input type="email" class="form-control" id="customerEmail" name="customerEmail" placeholder="Email" required>
+      </div>
+      <div class="form-group">
+        <label for="servicesRequired">Service Requested</label>
+        <select class="form-control" id="servicesRequired" name="servicesRequired">
+        <option>Radiation Protection</option>
+        <option>Service Design &amp; Consultation</option>
+        <option>Quality Assurance</option>
+        <option>Corporate Assurance</option>
+        <option>Project Management</option>
+        <option>Training &amp; Staff Development</option>
+        <option>Ethics Guidance</option>
+        <option>Other</option>
+      </select>
+      </div>
+      <div class="form-group">
+        <label for="customerMessage">Requirements &amp; Further Information</label>
+        <textarea class="form-control" name="customerMessage" id="customerMessage" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-lg btn-block btn-info">Get in touch</button>
+    </form>
